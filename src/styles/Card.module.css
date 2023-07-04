@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    padding: 0.25rem;
+    background: #fff;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: transform 175ms ease-in-out;
+}
+
+.card {
+    & > a {
+        width: 100%;
+        text-decoration: none;
+        line-height: 1.4;
+        padding: 1rem 1.3rem;
+    }
+
+    & > a {
+        & > h2 {
+            font-size: 1.25rem;
+        }
+
+        & > p {
+            margin-top: 0.5rem;
+            color: #444;
+        }
+    }
+
+    &:is(:hover, :focus-within) {
+        transform: scale(1.1);
+    }
+}
