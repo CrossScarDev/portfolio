@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repo using Git
-              uses: action/checkout@v3
+              uses: actions/checkout@v3
             - name: Install, Build, and Upload
               uses: withastro/action@v0
               with:
