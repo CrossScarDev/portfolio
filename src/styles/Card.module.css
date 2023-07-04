@@ -27,7 +27,7 @@
         }
     }
 
-    &:is(:hover, :focus-within) {
+    &:hover {
         transform: scale(1.1);
     }
 }
