@@ -3,3 +3,17 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #eee;
+}
+
+main {
+    width: 50vw;
+    background: #fff;
+    padding: 2rem;
+}
