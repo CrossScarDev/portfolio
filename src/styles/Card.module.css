@@ -3,7 +3,7 @@
     padding: 0.25rem;
     background: #fff;
     border-radius: 0.6rem;
-    box-shadow: 0 1px 0.5rem 0.01rem #000;
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.2);
     transition: transform 175ms ease-in-out;
     height: 250px;
 }
