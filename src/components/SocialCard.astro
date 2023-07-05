@@ -1,0 +1,15 @@
+---
+import styles from '../styles/SocialCard.module.css';
+
+export interface Props {
+    imgURI: string,
+    title: string,
+    href: string
+}
+
+const { imgURI, title, href } = Astro.props;
+---
+<a class={styles.card} href={href} target="_blank">
+    <img src={imgURI} alt="Logo">
+    <span>{title}</span>
+</a>

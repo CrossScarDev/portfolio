@@ -1,0 +1,14 @@
+---
+import styles from '../styles/SocialCards.module.css'
+import SocialCard from './SocialCard.astro';
+import type { Props as SocialCardProps } from './SocialCard.astro';
+
+export interface Props {
+    cards: SocialCardProps[]
+}
+
+const { cards } = Astro.props;
+---
+<div class={styles.cards}>{cards.map(card => (
+    <SocialCard {...card} />
+))}</div>
