@@ -10,10 +10,12 @@ body {
     display: flex;
     justify-content: center;
     background: #eee;
+    overflow-x: hidden;
 }
 
 main {
     width: 50vw;
     background: #fff;
     padding: 2rem;
+    height:min-content;
 }

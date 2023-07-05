@@ -4,17 +4,17 @@ import styles from '../styles/Card.module.css';
 export interface Props {
 	title: string;
 	body: string;
-	href: string;
+	href?: string;
 }
 
 const { href, title, body } = Astro.props;
 ---
 
 <li class={styles.card}>
-	<a href={href} target="_blank">
+	<a href={href != null ? href : '#'} target={href != null ? "_blank" : "_self"}>
 		<h2>
 			{title}
-			<span>&rarr;</span>
+			{href != null ? <span>&rarr;</span> : ''}
 		</h2>
 		<p>
 			{body}

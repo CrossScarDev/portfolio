@@ -1,9 +1,10 @@
 ---
+import '../styles/index.css';
 import Layout from '../layouts/Layout.astro';
 import type { Props as CardProps } from '../components/Card.astro';
 import Cards from '../components/Cards.astro';
 
-const cards: CardProps[] = [
+const projects: CardProps[] = [
 	{
 		title: "Birthday Website Generator",
 		href: 'https://commandergl.github.io/birthday/',
@@ -25,11 +26,28 @@ const cards: CardProps[] = [
 		body: "Enhance Scratch with more extensions, blocks, and customizability!"
 	}
 ];
+
+const hobbies: CardProps[] = [
+	{
+		title: "Programming",
+		body: "During the pandemic I found programming an easy way to get away from covid 19."
+	},
+	{
+		title: "Cubing",
+		body: "When covid 19 came around I couldn't find much to do. So I found a Rubiks Cube and tried to solve it; getting obsessed."
+	},
+	{
+		title: "Biking",
+		body: "After the pandemic I really wanted to go outside and biking was fun!"
+	}
+];
 ---
 
 <Layout title="Grady Link">
 	<main>
+		<h1>My Hobbies</h1>
+		<Cards cards={hobbies} />
 		<h1>My Projects:</h1>
-		<Cards cards={cards} />
+		<Cards cards={projects} />
 	</main>
 </Layout>
