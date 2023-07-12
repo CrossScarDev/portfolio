@@ -23,7 +23,7 @@ p > code {
 }
 
 iframe {
-    height: 25rem;
+    aspect-ratio: 33 / 20;
     border: none;
 }
 
