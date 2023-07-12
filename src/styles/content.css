@@ -27,7 +27,7 @@ iframe {
     border: none;
 }
 
-.back {
+main > span {
     font-weight: 550;
     cursor: pointer;
 }
