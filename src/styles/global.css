@@ -19,6 +19,7 @@ main {
     padding: 2rem;
     height:min-content;
     min-height: calc(100vh - 4rem);
+    position: relative;
 }
 
 a {
@@ -31,4 +32,13 @@ p {
 
 img {
     width: calc(100% - 4rem);
+}
+
+.license {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.75rem;
+    bottom: 1rem;
+    width: calc(100% - 4rem);
+    text-align: center;
 }
