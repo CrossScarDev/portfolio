@@ -26,3 +26,12 @@ iframe {
     height: 25rem;
     border: none;
 }
+
+.back {
+    font-weight: 550;
+    cursor: pointer;
+}
+
+main > h1 {
+    margin-top: 1rem;
+}
