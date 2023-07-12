@@ -5,10 +5,11 @@ import '../styles/content.css';
 export interface Props {
 	frontmatter: {
 		title: string;
+		website: string;
 	}
 }
 
-const { title } = Astro.props.frontmatter;
+const { title, website } = Astro.props.frontmatter;
 ---
 
 <!DOCTYPE html>
@@ -23,8 +24,9 @@ const { title } = Astro.props.frontmatter;
 	</head>
 	<body>
 		<main>
-			<span onclick="window.close();">Back &larrhk;</span>
+			<span onclick="window.close();" class="back">Back &larrhk;</span>
 			<h1>{title}</h1>
+			<a href={website} target="_blank" class="website">Website</a>
             <article>
                 <slot />
             </article>
