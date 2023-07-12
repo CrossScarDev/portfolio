@@ -1,5 +1,14 @@
 ---
 import '../styles/global.css';
+import '../styles/content.css';
+
+export interface Props {
+	frontmatter: {
+		title: string;
+	}
+}
+
+const { title } = Astro.props.frontmatter;
 ---
 
 <!DOCTYPE html>
@@ -10,9 +19,14 @@ import '../styles/global.css';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Grady Link</title>
+		<title>Grady Link - {title}</title>
 	</head>
 	<body>
-		<slot />
+		<main>
+			<h1>{title}</h1>
+            <article>
+                <slot />
+            </article>
+        </main>
 	</body>
 </html>

@@ -1,0 +1,19 @@
+---
+import ContentLink from '../../components/ContentLink.astro';
+
+export const getStaticPaths = async () => {
+    const contentPages = await Astro.glob('../../content/projects/*.mdx');
+
+    return contentPages.map(contentPage => ({
+        params: {
+            slug: contentPage.frontmatter.slug
+        },
+        props: {
+            contentPage
+        }
+    }));
+};
+
+const { Content } = Astro.props.contentPage;
+---
+<Content components={{ a: ContentLink }} />

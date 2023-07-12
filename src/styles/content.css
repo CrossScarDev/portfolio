@@ -1,0 +1,28 @@
+article {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.astro-code {
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+p:has(code) {
+    background: #eee;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: min-content;
+}
+
+p > code {
+    color: #666;
+    font-style: italic;
+}
+
+iframe {
+    height: 25rem;
+    border: none;
+}

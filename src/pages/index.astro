@@ -4,13 +4,12 @@ import Layout from '../layouts/Layout.astro';
 import type { Props as CardProps } from '../components/Card.astro';
 import type { Props as SocialCardProps } from '../components/SocialCard.astro';
 import Cards from '../components/Cards.astro';
-import SocialCard from '../components/SocialCard.astro';
 import SocialCards from '../components/SocialCards.astro';
 
 const projects: CardProps[] = [
 	{
 		title: "Birthday Website Generator",
-		href: 'https://commandergl.github.io/birthday/',
+		href: './projects/birthday',
 		body: "Generate birthday websites for your favorite loved ones!"
 	},
 	{
@@ -74,7 +73,7 @@ const socials: SocialCardProps[] = [
 ];
 ---
 
-<Layout title="Grady Link">
+<Layout>
 	<main>
 		<h1>My Hobbies</h1>
 		<Cards cards={hobbies} />

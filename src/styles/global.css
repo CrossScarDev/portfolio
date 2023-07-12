@@ -18,4 +18,17 @@ main {
     background: #fff;
     padding: 2rem;
     height:min-content;
+    min-height: calc(100vh - 4rem);
+}
+
+a {
+    color: #2267d5;
+}
+
+p {
+    text-indent: 2.5rem;
+}
+
+img {
+    width: calc(100% - 4rem);
 }
